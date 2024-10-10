@@ -16,10 +16,7 @@ public class Main {
     }
 
     static boolean isNormal(Building building) {
-        if (building.getNumberOfFloors() >= countRoomsInBuilding(building))
-            return true;
-        else
-            return false;
+        return building.getNumberOfFloors() >= countRoomsInBuilding(building);
     }
 
     static int countLampsInBuilding(Building building) {
